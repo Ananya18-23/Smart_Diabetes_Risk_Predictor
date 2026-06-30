@@ -26,18 +26,6 @@ An AI-powered Risk Assessment Tool designed to predict the likelihood of diabete
 ├── scaler_svm.pkl             # Fitted StandardScaler Object for input normalization
 └── README.md                  # Project Documentation
 
-### ⚙️ How It Works
-* **Feature Input: Captures 8 essential clinical parameters from the patient profile via the Streamlit interface (Glucose, BMI, Age, Insulin, Pregnancies, Blood Pressure, Skin Thickness, Pedigree Function).
+⚙️ How It WorksFeature Input: Captures 8 essential clinical parameters from the patient profile via the Streamlit interface (Glucose, BMI, Age, Insulin, Pregnancies, Blood Pressure, Skin Thickness, Pedigree Function).  Data Normalization: Normalizes real-time numeric inputs using the serialized scaler_svm.pkl to prevent metric scale bias.  Inference Execution: Passes the scaled matrix directly into the core diabetes_model.pkl classifier.  Insight Distribution: Returns immediate classification (Diabetic / Non-Diabetic) with visual graph mapping and categorized recommendation blocks.
 
-* **Data Normalization: Normalizes real-time numeric inputs using the serialized scaler_svm.pkl to prevent metric scale bias.
-
-* **Inference Execution: Passes the scaled matrix directly into the core diabetes_model.pkl classifier.
-
-* **Insight Distribution: Returns immediate classification (Diabetic / Non-Diabetic) with visual graph mapping and categorized recommendation blocks.
-
-### 📈 Future Improvements
-* **🎯 Ensemble Frameworks: Integrate Deep Learning models (ANNs) or XGBoost architectures to further benchmark prediction accuracy.
-
-* **📡 Cloud Deployment: Deploy the Streamlit system live to platforms like Streamlit Community Cloud, Render, or AWS.
-
-* **🏥 Electronic Health Records (EHR) Sync: Create secure API endpoints to pull direct clinical data feeds from hospital infrastructure.
+📈 Future Improvements🎯 Ensemble Frameworks: Integrate Deep Learning models (ANNs) or XGBoost architectures to further benchmark prediction accuracy.  📡 Cloud Deployment: Deploy the Streamlit system live to platforms like Streamlit Community Cloud, Render, or AWS.  🏥 Electronic Health Records (EHR) Sync: Create secure API endpoints to pull direct clinical data feeds from hospital infrastructure. 
